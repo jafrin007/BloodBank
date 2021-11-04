@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Blood Bank</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            background-color:#ff0000;
+    background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url("https://wallpapercave.com/wp/wp4323461.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+}
+.form-box
+{
+    width:380px;
+    height:480px;
+    position: relative;
+    margin:6% auto;
+    background: #fff;
+    padding: 5px;
+}
+.button-box
+{
+    width:220px;
+    margin: 35px auto;
+    position: relative;
+    box-shadow: 0 0 20px 9px #ffc93c;
+    border-radius: 30px;
+}
+.login-button
+{
+    padding: 10px 30px;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    outline: none;
+    position: relative;
+}
+#button
+{
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 220px;
+    height: 100%;
+    background: linear-gradient(to right,#ffbe0f,#fa1e0e);
+    border-radius: 30px;
+    transition: .5s;
+}
+.input-data
+{
+    left: 50px;
+    top: 180px;
+    position: absolute;
+    width: 280px;
+    transition: .5s;
+}
+.input-field
+{
+    width: 100%;
+    padding: 10px 0;
+    margin: 5px;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 1px solid #999;
+    outline: none;
+    background: transparent; 
+}
+.submit
+{
+    width: 85%;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: black;
+    margin: auto;
+    background:linear-gradient(to right,#ffbe0f,#fa1e0e);
+    border: 0;
+    outline: none;
+    border-radius: 30px;
+
+}
+.alternate
+{
+ font-size:15px;
+ color:black;
+}
+#login
+{
+    left: 50px;
+}
+#register
+{
+    left: 450px;
+}
+
+    </style>
+</head>
+<body>
+    <div class="form-box">
+       <div class="button-box">
+        <div id="button"></div>
+        <center><button type="button" class="login-button">Admin Login</button></center>
+       </div>
+       <form id="login" class="input-data" action='index.php' method='POST'>
+        <input type="text" class="input-field" name="adminname" placeholder="Enter Adminname" required>
+        <input type="text" class="input-field" name="password" placeholder="Enter Password" required>
+        <a class="alternate" href="register.php">Not an Admin?</a><br>
+        <center><button type="submit" class="submit">Login</button></center>
+        </form>
+   </div>
+</body>
+</html>
